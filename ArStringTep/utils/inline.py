@@ -26,5 +26,5 @@ gen_key = InlineKeyboardMarkup(
 )
 
 retry_key = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="إعـادة المحاولـة .", callback_data="gensession")]]
+    [[InlineKeyboardButton(text="إعـادة المحاولـة .", callback_data="getsession")]]
 )
