@@ -1,7 +1,6 @@
 {
     "name": "استخـــــــــراج تيبثـــون",
-    "description": "A Telegram Bot to get
-    Telethon and Pyrogram String Session.",
+    "description": "A Telegram Bot to get Telethon and Pyrogram String Session.",
     "logo": "https://telegra.ph/file/654ddaf472f18b799600b.jpg",
     "keywords": [
         "python3",
