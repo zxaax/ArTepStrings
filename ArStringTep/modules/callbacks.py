@@ -3,7 +3,7 @@ from pyrogram.types import CallbackQuery
 
 from ArStringTep import Anony
 from ArStringTep.utils import string_key
-from ArStringTep.modules.gen import string_session
+from ArStringTep.modules.string import string_session
 
 
 @Anony.on_callback_query(
