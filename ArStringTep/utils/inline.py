@@ -15,7 +15,7 @@ keyboard = InlineKeyboardMarkup(
     ]
 )
 
-gen_key = InlineKeyboardMarkup(
+string_key = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(text="بايـروجـرام", callback_data="pyrogram1"),
