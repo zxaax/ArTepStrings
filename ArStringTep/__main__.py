@@ -23,4 +23,4 @@ async def anony_boot():
 
 if __name__ == "__main__":
     asyncio.get_event_loop().run_until_complete(anony_boot())
-    LOGGER.info("Stopping String Gen Bot...")
+    LOGGER.info("Stopping String Bot...")
