@@ -20,10 +20,10 @@ async def cb_choose(_, cq: CallbackQuery):
     elif query.startswith("pyrogram") or query.startswith("telethon"):
         try:
             if query == "pyrogram":
-                await get_session(cq.message, cq.from_user.id)
+                await string_session(cq.message, cq.from_user.id)
             elif query == "pyrogram1":
-                await get_session(cq.message, cq.from_user.id, old_pyro=True)
+                await string_session(cq.message, cq.from_user.id, old_pyro=True)
             elif query == "telethon":
-                await get_session(cq.message, cq.from_user.id, telethon=True)
+                await string_session(cq.message, cq.from_user.id, telethon=True)
         except Exception as e:
             await cq.edit_message_text(e, disable_web_page_preview=True)
