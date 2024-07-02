@@ -19,4 +19,4 @@ Please see < https://github.com/Tepthonee/ArTepString/blob/main/LICENSE >
 All rights reserved.
 EOF
 
-gunicorn app:app --daemon && python -m ArStringTep
+gunicorn app:app --daemon && python -m __main__.py
