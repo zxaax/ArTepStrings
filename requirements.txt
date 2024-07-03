@@ -6,5 +6,6 @@ flask
 flask_restful
 pyrogram==2.0.106
 python-dotenv==1.0.0
+pymongo
 telethon==1.28.5
 tgcrypto==1.2.5
