@@ -1,11 +1,8 @@
-FROM python:latest
-
-RUN apt-get update -y && apt-get upgrade -y
-
-RUN pip3 install -U pip
-
-COPY . /app/
-WORKDIR /app/
-RUN pip3 install -U -r requirements.txt
-
-CMD bash start
+FROM python:3.11
+WORKDIR /app
+COPY . /app
+RUN apt-get -qq update && apt-get -qq install -y git wget ffmpeg mediainfo \
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/*
+RUN pip install --no-cache-dir -r requirements.txt
+CMD ["python3","-m","ArStringTep"]
